@@ -309,6 +309,7 @@ describe("tasks/recordProperty:importRecordProperties", () => {
           type: "test-non-unique-connection",
           name: "translations source",
           appId: app.id,
+          modelId: "mod_profiles",
         });
         await otherSource.setMapping({ word: "lastName" });
         await otherSource.update({ state: "ready" });
