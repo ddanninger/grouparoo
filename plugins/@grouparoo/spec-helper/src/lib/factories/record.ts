@@ -13,7 +13,7 @@ const data = async (props = {}) => {
   return Object.assign({}, defaultProps, props);
 };
 
-export default async (props: { [key: string]: any }, properties = {}) => {
+export default async (props?: { [key: string]: any }, properties = {}) => {
   const { GrouparooRecord } = await import(`@grouparoo/core/${loadPath}`);
   const record = await GrouparooRecord.create(await data(props));
 
