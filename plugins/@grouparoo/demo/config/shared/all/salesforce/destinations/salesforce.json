@@ -4,6 +4,7 @@
   "name": "Salesforce",
   "type": "salesforce-objects-export",
   "appId": "salesforce",
+  "modelId": "mod_profiles",
   "syncMode": "sync",
   "options": {
     "groupNameField": "Name",
